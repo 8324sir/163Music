@@ -1,0 +1,59 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+*::before,::after{box-sizing: border-box;}
+
+@keyframes circle{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: url('http://music.163.com/api/img/blur/5998935441219557') no-repeat center;
+    background-size: cover;
+}
+
+/*container*/
+.disc-container{
+    position: relative;
+}
+.disc-container .pointer{
+    width: 26vw;
+    position: absolute;
+    left: 46vw;
+}
+.disc-container .disc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 19vw;
+}
+.disc-container .ring{
+    width: 79vw;
+}
+.disc-container .light{
+    width: 79vw;
+    position: absolute;
+    animation: circle 22s infinite linear;
+}
+.disc-container .cover{
+    width: 50vw;
+    position: absolute;
+    border-radius: 50%;
+    animation: circle 22s infinite linear;
+}
+
+/* 歌词 */
+.song-description{
+
+}
+
+.links{
+
+}
