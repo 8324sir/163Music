@@ -40,12 +40,14 @@
 .disc-container .light{
     width: 79vw;
     position: absolute;
-    animation: circle 22s infinite linear;
 }
 .disc-container .cover{
     width: 50vw;
     position: absolute;
     border-radius: 50%;
+}
+.disc-container.playing .light,
+.disc-container.playing .cover{
     animation: circle 22s infinite linear;
 }
 
@@ -74,5 +76,33 @@
 }
 /*按钮*/
 .links{
-
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 2vh;
+    z-index: 10;
 }
+
+.footer-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #D43832;
+}
+.footer-wrap span{
+    width:37.3vw;
+    margin: 0.5em;
+    text-align: center;
+    border: 1px solid #D43832;
+    background: transparent;
+    height: 6.3vh;
+    line-height: 6vh;
+    border-radius: 4px;
+    letter-spacing: 4px;
+    font-size: 18px;
+}
+.footer-wrap span.u-red{
+    color: #fff;
+    background-color: #d43b32;
+}
+
