@@ -49,11 +49,30 @@
     animation: circle 22s infinite linear;
 }
 
-/* 歌词 */
+/*歌词*/
 .song-description{
-
+    color: #AEABAC;
+    text-align: center;
+    margin-top: 25px;
+}
+.song-description h1{
+    font-size: 18px;
+    color: #fff;
 }
 
+.song-description .lyric{
+    margin-top: 14px;
+}
+.song-description .lines{
+    line-height: 1.5;
+    font-size: 16px;
+    height: 88px;
+    overflow: hidden;
+}
+.song-description p{
+    padding-bottom: 8px;
+}
+/*按钮*/
 .links{
 
 }
