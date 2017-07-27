@@ -23,6 +23,22 @@
 .disc-container{
     position: relative;
 }
+.disc-container .icon-wrap{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    height: 15vw;
+    width: 15vw;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.disc-container .icon{
+    width: 10vw;
+    fill: white;
+}
 .disc-container .pointer{
     width: 26vw;
     position: absolute;
@@ -49,6 +65,15 @@
 .disc-container.playing .light,
 .disc-container.playing .cover{
     animation: circle 22s infinite linear;
+}
+.disc-container .pasue-play{
+    display: none;
+}
+.disc-container.playing .pasue-play{
+    display: block;
+}
+.disc-container.playing .icon-play{
+    display: none;
 }
 
 /*歌词*/
