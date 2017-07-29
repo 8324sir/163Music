@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::before,*::after{
+    box-sizing: border-box;
+}
+ol,ul{
+    list-style: none;
+}
+body{
+    font-size: 3.7vw;
+}
+/*页面上方logo以及右边的a标签*/
+.topbar{
+    background: #d43c33;
+    padding: 4.5vw 2.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topbar .topbar-svg{
+   width: 38vw;
+}
+
+.topbar .downloadApp{
+    line-height: 7.5vw;
+    border: 1px solid rgba(255, 255, 255,.6);
+    border-radius: 4.25vw;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0 0.5em;
+}
+/*logo下方的页面导航栏*/
+.home-nav >ol{
+    display: flex;
+    text-align: center;
+    border-bottom: 1px solid #cccccc;
+    font-size: 1.1em;
+}
+.home-nav > ol> li{
+    flex: 1;
+}
+.home-nav > ol> li.active{
+    color: #D33a31;
+}
+.home-nav > ol> li >span{
+    line-height: 12vw;
+    display: inline-block;
+}
+
+/*推荐歌单*/
+.remd-lists{
+
+}
+
+/*最新音乐*/
+.latestMusic{
+
+}
+
+/*页面下方的logo及oppen按钮*/
+.home-ft{
+
+}
