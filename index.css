@@ -15,7 +15,7 @@ h1,h2,h3{
 section>h2:first-child{
     font-size: 4.2vw;
     border-left: 2px solid #d43c33;
-    padding-left: 2.4vw;
+    padding-left: 2.6vw;
     line-height: 1;
     margin-bottom: 3.8vw;
 }
@@ -75,6 +75,7 @@ body{
 /*推荐歌单*/
 .remd-lists{
     padding-top: 5.4vw;
+    padding-bottom: 6.4vw;
 }
 .remd-lists >ul{
     display: flex;
@@ -102,8 +103,66 @@ body{
 .latestMusic{
 
 }
-
+.latestMusic > ol{
+    padding-left: calc(2.6vw + 2px);
+}
+.latestMusic >ol >li{
+    border-bottom: 1px solid #e2e2e3;
+    padding: 1.6vw 0;
+    position: relative;
+}
+.latestMusic >ol >li h3{
+    font-size: 4.53vw;
+}
+.latestMusic >ol >li p{
+    font-size: 3.2vw;
+    color: #888;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    padding-top: 0.8vw;
+}
+.latestMusic >ol >li>a>svg.play{
+    width: 8vw;
+    height: 8vw;
+    position: absolute;
+    right: 4vw;
+    top:50%;
+    transform: translateY(-50%);
+    fill: #aaaaaa;
+}
+.latestMusic >ol >li>p>svg.sq{
+    width: 4.2vw;
+    height: 4.2vw;
+    margin-right: 0.5em;
+    fill: #FE672E;
+} 
 /*页面下方的logo及oppen按钮*/
 .home-ft{
-
+    background: url('http://s3.music.126.net/m/s/img/recommand_bg_2x.png?d045fafc60e017b653f8065a87496922') no-repeat;
+    padding-bottom: 6vw;
+}
+.home-ft .logo{
+    text-align: center;
+    padding-top: 16.9%;
+}
+.home-ft .logo .logosvg{
+    width: 61.3vw;
+    height: 11.7vw;
+}
+.home-ft .openapp{
+    line-height: 10vw;
+    border: 1px solid #d33a31;
+    border-radius: 10vw;
+    font-size: 4.2vw;
+    color: #d33a31;
+    margin: 4vw 10vw 1.3vw;
+    text-align: center;
+}
+.home-ft .copyright{
+    color: #888;
+    text-align: center;
+    font-size: 3.2vw;
+    line-height: 3.7vw;
+    transform: scale(.75);
 }
