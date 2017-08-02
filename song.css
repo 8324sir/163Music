@@ -15,8 +15,18 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background: url('http://music.163.com/api/img/blur/5998935441219557') no-repeat center;
+    /*background: url('http://music.163.com/api/img/blur/5998935441219557') no-repeat center;*/
     background-size: cover;
+    z-index: -1;
+}
+.page::before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
 }
 
 /*container*/
@@ -82,7 +92,8 @@
 .song-description{
     color: #AEABAC;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 6.66vw;
+    z-index: 1;
 }
 .song-description h1{
     font-size: 18px;
@@ -90,16 +101,16 @@
 }
 
 .song-description .lyric{
-    margin-top: 14px;
+    margin-top: 3.733vw;
 }
 .song-description .lines{
     line-height: 1.5;
-    font-size: 16px;
-    height: 88px;
+    font-size: 4.26vw;
+    height: 23.46vw;
     overflow: hidden;
 }
 .song-description p{
-    padding-bottom: 8px;
+    padding-bottom: 2.133vw;
 }
 /*按钮*/
 .links{
@@ -124,9 +135,9 @@
     background: transparent;
     height: 6.3vh;
     line-height: 6vh;
-    border-radius: 4px;
-    letter-spacing: 4px;
-    font-size: 18px;
+    border-radius: 1.06vw;
+    letter-spacing: 1.06vw;
+    font-size: 4.8vw;
 }
 .footer-wrap span.u-red{
     color: #fff;
