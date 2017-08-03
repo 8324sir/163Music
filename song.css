@@ -102,15 +102,19 @@
 
 .song-description .lyric{
     margin-top: 3.733vw;
+    overflow: hidden;
 }
 .song-description .lines{
     line-height: 1.5;
     font-size: 4.26vw;
     height: 23.46vw;
-    overflow: hidden;
+    transition: transform 0.3s;
 }
 .song-description p{
     padding-bottom: 2.133vw;
+}
+.song-description p.active{
+    color: rgb(255, 255, 255);
 }
 /*按钮*/
 .links{
