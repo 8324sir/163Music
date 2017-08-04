@@ -44,6 +44,9 @@
     width: 15vw;
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .disc-container .icon{
     width: 10vw;
@@ -59,6 +62,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 19vw;
+    position: relative;
 }
 .disc-container .ring{
     width: 79vw;
