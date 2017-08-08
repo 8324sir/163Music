@@ -17,4 +17,11 @@ $(function(){
         })
         $('#laMusicloading').remove()
     })
+    
+    //监听事件
+    $('.home-nav').on('click','ol.tab-items>li',function(e){
+        let $li = $(e.currentTarget).addClass('active').siblings().removeClass('active')
+        let index = $li.index()
+        $('.tab-content > li').eq(index).addClass('active').siblings().removeClass('active')
+    })
 })
