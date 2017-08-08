@@ -72,6 +72,7 @@ body{
     left: -2vw;
     right: -2vw;
 }
+
 /*推荐歌单*/
 .remd-lists{
     padding-top: 5.4vw;
@@ -99,6 +100,14 @@ body{
     text-overflow: ellipsis;
     font-size: 3.5vw;
 }
+/*tab切换*/
+.tab-content > li{
+    display: none;
+}
+.tab-content > li.active{
+    display: block;
+}
+
 /*最新音乐*/
 .latestMusic{
 
@@ -173,3 +182,56 @@ body{
     line-height: 3.7vw;
     transform: scale(.75);
 }
+/*热歌榜*/
+.tab-content .hot-song .m-hot{
+    width: 100vw;
+    height: 100vh;
+}
+
+.tab-content .hot-song .hot-top{
+    position: relative;
+    padding-top: 38.9%;
+    overflow: hidden;
+    background: url("//s3.music.126.net/m/s/img/hot_music_bg_2x.jpg?f01a252389c26bcf016816242eaa6aee") no-repeat;
+    background-size: contain;
+}
+.tab-content .hot-song .hot-top::after,
+.hot-song .hot-opct{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.tab-content .hot-song .hot-top::after{
+    content: "";
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.tab-content .hot-song .hot-opct{
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    z-index: 2;
+    padding-left: 5.33vw;
+}
+.tab-content .hot-song .u-hmsprt{
+    background: url("//s3.music.126.net/m/s/img/index_icon_2x.png?5207a28c3767992ca4bb6d4887c74880") no-repeat;
+    background-size: 44.26vw 25.86vw;
+}
+.tab-content .hot-song .hot-icon{
+    width: 37.86vw;
+    height: 17.86vw;
+    background-position: -6.4vw -8vw;
+}
+.tab-content .hot-song .hot-time{
+    margin-top: 2.66vw;
+    font-size: 3.2vw;
+    color: hsla(0,0%,100%,.8);
+    transform: scale(.91);
+    transform-origin: left top;
+}
+
