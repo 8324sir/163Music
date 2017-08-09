@@ -6,14 +6,29 @@ $(function(){
         let song = songs.filter(function(s){
             return s.id === id
         })[0]
+        //console.log(song)
         let {url,lyric,name,bgimage,imgsrc} = song
-
+        
         initPlayer.call(undefined,url)
         initText(name,lyric)
         initimg(bgimage,imgsrc)
         
         
     })
+
+    $.get('./topsong.json').then(function(response){
+        let songs =  response
+        let song = songs.filter(function(s){
+            return s.id === id
+        })[0]
+        //console.log(song)
+        let {url,lyric,name,bgimage,imgsrc} = song
+
+        initPlayer.call(undefined,url)
+        initText(name,lyric)
+        initimg(bgimage,imgsrc)
+    })
+
     //动态获取播放页面的背景图和封面图
     function initimg(bgimage,imgsrc){
         $('.page').css('background','url(' + bgimage + ') no-repeat center')

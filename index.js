@@ -45,4 +45,30 @@ $(function(){
             })
         }
     })
+
+    $.get('./topsong.json').then(function(response){
+        let items = response
+        items.forEach(function(i){
+            let $li = $(`
+                <li>
+                    <a href="./song.html?id=${i.id}">
+                        <div class="number">${i.number}</div>
+                        <div class="track-list">
+                            <div class="track">
+                                <h3>${i.name}</h3>
+                                <p>${i.sginfo}</p>
+                            </div>
+                            <div class="icon">
+                                <svg class="play" aria-hidden="true">
+                                    <use xlink:href="#icon-play-circle"></use>
+                                </svg>
+                             </div>        
+                        </div>                             
+                    </a>                          
+                </li>
+            `)
+            $('#hot-music').append($li)
+        })
+        $('#hot-loading').remove()
+    })
 })

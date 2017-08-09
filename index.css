@@ -234,4 +234,99 @@ body{
     transform: scale(.91);
     transform-origin: left top;
 }
-
+/*
+.tab-content .hot-song .hot-lists >p{
+    text-align: center;
+}
+.tab-content .hot-lists >ol >li{
+    border-bottom: 1px solid #e2e2e3;
+    padding: 1.6vw 0;
+    position: relative;
+    padding-left: 2.66vw;
+    display: flex;
+}
+.tab-content .number{
+    position: absolute;
+    align-items: center;
+    font-size: 4.53vw;
+    width: 7.46vw;
+}
+.tab-content .track-list{
+    position: relative;
+    flex: 1 1 auto;
+}
+.tab-content .hot-lists >ol >li a{
+    text-decoration: none;
+    color: inherit;
+}
+.tab-content .hot-lists >ol >li h3{
+    font-size: 4.53vw;
+}
+.tab-content .hot-lists >ol >li p{
+    font-size: 3.2vw;
+    color: #888;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    padding-top: 0.8vw;
+}
+.tab-content .hot-lists >ol >li>a>svg.play{
+    width: 8vw;
+    height: 8vw;
+    position: absolute;
+    right: 4vw;
+    top:50%;
+    transform: translateY(-50%);
+    fill: #aaaaaa;
+} */
+.tab-content .hot-song .hot-lists >p{
+    text-align: center;
+}
+.tab-content .hot-lists >ol a{
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+}
+.tab-content .hot-lists li{
+    padding-left: 2.66vw;
+}
+.tab-content #hot-music li:nth-child(1) .number,
+.tab-content #hot-music li:nth-child(2) .number,
+.tab-content #hot-music li:nth-child(3) .number{
+    color: #df3436;
+}
+.tab-content .hot-lists .number{
+    display: flex;
+    font-size: 4.53vw;
+    width: 7.46vw;
+    align-items: center;
+    color: #999;
+}
+.tab-content .hot-lists .track-list{
+    display: flex;
+    flex: 1 1 auto;
+    border-bottom: 1px solid #e2e2e3;
+}
+.tab-content .hot-lists .track{
+    flex: 1 1 auto;
+    padding: 1.6vw 0;
+}
+.tab-content .hot-lists .track h3{
+    padding: 1px 0;
+    font-size: 4.53vw;
+}
+.tab-content .hot-lists .track p{
+    color: #888;
+    font-size: 3.2vw;
+    padding: 1px 0;
+}
+.tab-content .hot-lists .icon{
+    display: flex;
+    align-items: center;
+    padding: 0 2.66vw;
+}
+.tab-content .hot-lists >ol >li svg{
+    width: 8vw;
+    height: 8vw;
+    fill: #aaaaaa;
+}
